@@ -1,6 +1,7 @@
 import random
 from adafruit_servokit import ServoKit
 import sys
+import time
 
 # Initialize PCA9685 with 16 channels
 kit = ServoKit(channels=16)
@@ -16,13 +17,19 @@ def beginSparring():
     punches = generateRandomPunches()
     print(punches)
     kit.servo[4].angle = 45
+    time.sleep(1)
     kit.servo[4].angle = 135
+    time.sleep(1)
+    kit.servo[4].angle = 45
 
 def beginCombination(combination, loop=False):
     print("Combination session started : ", combination)
     print("Loop ", loop)
     kit.servo[0].angle = 90
+    time.sleep(1)
     kit.servo[0].angle = 45
+    time.sleep(1)
+    kit.servo[0].angle = 90
 
 def endWorkout():
     print("Workout session ended.") # This is a placeholder for the actual end workout logic.
