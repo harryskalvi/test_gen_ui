@@ -5,17 +5,6 @@ import time
 
 # Initialize PCA9685 with 16 channels
 kit = ServoKit(channels=16)
-'''
-try:
-    from adafruit_servokit import ServoKit
-    kit = ServoKit(channels=16)
-except NotImplementedError:
-    print("Running on unsupported platform — mocking ServoKit")
-    class MockKit:
-        def __getattr__(self, name):
-            return lambda *args, **kwargs: None
-    kit = MockKit()
-'''
 
 servoAngles = {
     "Jab":          [(0,0) (4,45), (8,60), (12,180)],
