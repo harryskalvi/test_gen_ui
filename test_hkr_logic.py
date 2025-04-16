@@ -34,9 +34,20 @@ def generateRandomPunches():
 def beginSparring():
     print("Sparring session started.")
     punches = generateRandomPunches()
+<<<<<<< HEAD
     for punch in punches:
         punch(punch)
         time.sleep(1)
+=======
+    print(punches)
+    kit.servo[0].angle = 0
+    time.sleep(1)
+    kit.servo[4].angle = 0
+    time.sleep(1)
+    kit.servo[8].angle = 0
+    time.sleep(1)
+    kit.servo[12].angle = 0
+>>>>>>> a17da3b6daa90553691ada2c63dc26e33fc5dc9c
 
 def beginCombination(combination, loop=False):
     print("Combination session started : ", combination)
