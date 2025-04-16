@@ -145,19 +145,19 @@ class MainApp(QMainWindow):
 
     def event_LHook(self):
         # print("Left Hook action triggered.")
-        self.listCreateCombination.addItem("LeftHook")
+        self.listCreateCombination.addItem("LHook")
     
     def event_RHook(self):
         # print("Right Hook action triggered.")
-        self.listCreateCombination.addItem("RightHook")
+        self.listCreateCombination.addItem("RHook")
     
     def event_LUppercut(self):
         # print("Left Uppercut action triggered.")
-        self.listCreateCombination.addItem("LeftUppercut")
+        self.listCreateCombination.addItem("LUppercut")
 
     def event_RUppercut(self):
         # print("Right Uppercut action triggered.")
-        self.listCreateCombination.addItem("RightUppercut")
+        self.listCreateCombination.addItem("RUppercut")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
