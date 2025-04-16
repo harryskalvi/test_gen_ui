@@ -16,4 +16,4 @@ def beginCombination(combination, loop=False):
     print("Loop ", loop)
 
 def endWorkout():
-    print("Workout session ended.")
+    print("Workout session ended.") # This is a placeholder for the actual end workout logic.
